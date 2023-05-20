@@ -6,55 +6,89 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/26793e16a7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <h1>Alvaro Arias Castro</h1>
             <ul>
-                <li><a href="#">Presentation</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="open presentation">Presentation</a></li>
+                <li><a href="#" class="open projects">Projects</a></li>
+                <li><a href="#" class="open skills">Skills</a></li>
+                <li><a href="#" id="testID" class="contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-        <div class="presetation">
-            <h2>Presentation</h2>
-            <div class="content">
-                <p id="text-description">Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer,
-                    chiefly known for my work
-                    on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
-                    I am one of the first to recognize that machines have applications beyond pure calculation, and to
-                    have
-                    published the first algorithm intended to be carried out by such a machine.
-                    In my free time I like to read about scientific developments, mathematics, and computational
-                    mathematics. I also like to take my chances of winning big.</p>
-                <div class="img-container">
-                    <img id="image-description"
-                        src="https://static.simpsonswiki.com/images/thumb/6/65/Bart_Simpson.png/300px-Bart_Simpson.png"
-                        alt="Photo">
+        <div class="banner">
+            <div class="left">
+                <h1>Alvaro Arias Castro</h1>
+            </div>
+            <div class="right">
+                <div class="presentation content">
+
+                    <div class="text-container">
+                        <h2>Presentation</h2>
+                        <p>Hi! I'm Ada, Countess of Lovelace and am an English mathematician and
+                            writer,
+                            chiefly known for my work
+                            on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
+                            I am one of the first to recognize that machines have applications beyond pure calculation,
+                            and
+                            to
+                            have
+                            published the first algorithm intended to be carried out by such a machine.
+                            In my free time I like to read about scientific developments, mathematics, and computational
+                            mathematics. I also like to take my chances of winning big.</p>
+                    </div>
+                    <div class="img-container">
+                        <img id="image-description"
+                            src="https://static.simpsonswiki.com/images/thumb/6/65/Bart_Simpson.png/300px-Bart_Simpson.png"
+                            alt="Photo">
+                    </div>
+                </div>
+                <div class="projects content">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a href="https://alrock90.github.io/github.io/">HTML</a></li>
+                        <li><a href="https://github.com/alrock90/js">JavaScript</a></li>
+                    </ul>
+                </div>
+                <div class="skills content">
+                    <h2>Skills</h2>
+                    <ul>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-solid fa-terminal"></i>
+                        <i class="fa-brands fa-linux"></i>
+                        <i class="fa-solid fa-database"></i>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="projects-content">
-            <h2>Projects</h2>
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact</h2>
             <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-                <li><span class="fa-solid fa-user"></span></li>
+                <li>email: alvaro.ac90@gmail.com</li>
+                <a href="https://www.linkedin.com/in/alvaro-arias-c/" class="fa-brands fa-linkedin">
+                <a href="https://www.xing.com/profile/Alvaro_AriasCastro/cv" class="fa-brands fa-square-xing"></a>
+                
             </ul>
         </div>
-    </main>
+
+    </footer>
+    <script src="main.js"></script>
 </body>
-<footer>
 
-
-</footer>
 
 </html>
