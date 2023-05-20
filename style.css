@@ -4,6 +4,7 @@ html {
   font-size: 16px;
   box-sizing: border-box;
   color: #1B365C;
+  height: 100%;
 }
 
 a {
@@ -28,10 +29,11 @@ h2 {
 
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #7EA1C4;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -62,7 +64,19 @@ nav ul {
 nav ul li {
   padding: 0 1rem;
 }
+@media only screen and (max-width: 760px) {
 
+  header {    
+    height: auto;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    padding: 0.5rem;
+  }
+
+}
 
 /* Main */
 main {
@@ -71,14 +85,14 @@ main {
   top: 4rem;
   left: 0;
   padding: 0 auto;  
-  margin:15% 0;
+  margin:1% 0;
 
 }
 
 /* banner */
 .banner {  
   display: flex;
-  height: 50vh;  
+  min-height: 50vh;  
   width: 100%;
   padding: 0 auto;
   align-items: center;
@@ -93,6 +107,7 @@ main {
 .right {
   flex-basis: 15rem;
   flex-grow: 2;
+  padding: 1rem 0;
 }
 .banner h1 {
   padding: 2rem;
@@ -101,11 +116,21 @@ main {
 @media only screen and (max-width: 760px) {
 
   .banner {    
-    display: block;  
-    height: auto; 
-    min-height: 30rem;
+    display: flex;  
+    flex-direction: column;
     padding-bottom: 1rem;
+    
   }
+  .left {
+    flex-basis:1rem;
+  }
+  
+  .right {
+    flex-basis: 10rem;
+    flex-grow: 2;
+    padding: 1rem 0;
+  }
+
 
   .banner h1 {
     padding: 2rem 0;
@@ -175,7 +200,8 @@ main {
 @media only screen and (max-width: 760px) {
 
   .presentation {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .img-container {
@@ -192,11 +218,11 @@ main {
 
 /*footer*/
 footer{
-  padding: 1rem;
   position: relative;
-  top: 0;
+  margin-top: 5rem;
+  bottom: 0;
   left: 0;
-  height: 5rem;
+  padding: 0.5rem;
   width: 100%;
   background-color: #D7F3FF;
 }
@@ -206,5 +232,4 @@ footer h2{
 footer .fa-brands{
   padding: 0.5rem 0.5rem 0.5rem 0;
   font-size: 2rem;
-
 }
