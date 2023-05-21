@@ -136,15 +136,10 @@ main {
 
 
   .banner h1 {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 
-  .img-container {
-    justify-content: center;
-    margin: auto;
-    width: 200px;
-
-  }
+  
 }
 
 /* presentation */
