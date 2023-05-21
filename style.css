@@ -29,17 +29,19 @@ h2 {
 
 
 body {
-  min-height: 100vh;
-  background-color: #7EA1C4;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #7EA1C4;
+  
 }
 
 /* Header */
 header {
   background-color: #D7F3FF;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 4rem;
   padding: 0 auto;
@@ -223,7 +225,6 @@ footer{
   bottom: 0;
   left: 0;
   padding: 0.5rem;
-  width: 100%;
   background-color: #D7F3FF;
 }
 footer h2{
